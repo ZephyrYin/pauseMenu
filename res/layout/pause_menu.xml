@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/pause_menu_layout"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:gravity="center_vertical|center_horizontal"
+    >
+    
+    
+    <RelativeLayout	
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"    
+    android:orientation="vertical">        
+    <Button
+        android:id="@+id/btn_settings"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="settings" />
+
+    <Button
+        android:id="@+id/btn_strategy"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="strategy"
+        android:layout_below="@+id/btn_settings" />
+    
+    <Button
+        android:id="@+id/btn_screenshot"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="screenshot"
+        android:layout_below="@+id/btn_strategy" />
+
+   <Button
+        android:id="@+id/btn_cancel"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="cancel"
+        android:layout_below="@+id/btn_screenshot"/>
+   
+    
+</RelativeLayout>
+ 
+</LinearLayout>
+
+
+   
+
+
