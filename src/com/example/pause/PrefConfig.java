@@ -6,16 +6,13 @@ import android.preference.PreferenceManager;
 import android.provider.MediaStore.Audio.Media;
 
 public class PrefConfig {
-	private Context context;
+	//private Context context;
 	private SharedPreferences mSP;
 	private SharedPreferences.Editor mEd;
 	
-	public PrefConfig(Context c){
-		this.context=c;
-		if(c!=null)
-			mSP=PreferenceManager.getDefaultSharedPreferences(context);
-		if(mSP!=null)
-			mEd=mSP.edit();
+	public PrefConfig(Context context){
+		this.mSP=PreferenceManager.getDefaultSharedPreferences(context);
+		this.mEd=mSP.edit();
 	}
 	
 	public boolean checkKey(String key){

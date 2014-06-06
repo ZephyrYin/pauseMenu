@@ -33,7 +33,7 @@ import android.widget.Toast;
 
 public class GamepadSetting extends ListActivity{
 	
-	//private ListView lv;
+	private ListView lv;
 	private Switch mSwitch=null;
 	private List<String> mData;
 	private List<String> mKey;
@@ -42,14 +42,15 @@ public class GamepadSetting extends ListActivity{
 	@Override
     public void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        //setContentView(R.layout.gamepad_setting);
+        setContentView(R.layout.gamepad_setting);
         
         mData=getData();
         mKey=initKey();
-       // lv=(ListView)findViewById(R.id.listView1);
+        //lv=(ListView)findViewById(R.id.list);
        // lv.setAdapter(new ArrayAdapter<String>(this, android.R.layout.simple_expandable_list_item_1,getData()));
         
         MyAdapter mAdapter=new MyAdapter(this);
+        //lv.setAdapter(mAdapter);
         setListAdapter(mAdapter);
         // The activity is being created.
     }
